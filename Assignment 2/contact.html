@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <p>Fill out the form below to reach me.</p>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <!-- Name -->
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <!-- Email -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <!-- Subject -->
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject" required><br><br>
+
+      <!-- Message -->
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <!-- Dropdown -->
+      <label for="reason">Reason for Contact:</label><br>
+      <select id="reason" name="reason" required>
+        <option value="">--Select--</option>
+        <option value="project">Project Collaboration</option>
+        <option value="help">Help/Support</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <!-- Radio Buttons -->
+      <p>Preferred Contact Method:</p>
+      <input type="radio" id="email_contact" name="contact_method" value="email" required>
+      <label for="email_contact">Email</label>
+      <input type="radio" id="phone_contact" name="contact_method" value="phone">
+      <label for="phone_contact">Phone</label><br><br>
+
+      <!-- Checkbox -->
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">Subscribe to my newsletter</label><br><br>
+
+      <!-- Submit -->
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Immaculate Kimani</p>
+  </footer>
+</body>
+</html>
