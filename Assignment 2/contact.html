@@ -4,57 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Contact Me</h1>
     <p>Fill out the form below to reach me.</p>
   </header>
 
   <main>
-    <form action="#" method="post">
-      <!-- Name -->
-      <label for="name">Full Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <section class="contact-section">
+      <form action="#" method="post" class="contact-form">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
 
-      <!-- Email -->
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-      <!-- Subject -->
-      <label for="subject">Subject:</label><br>
-      <input type="text" id="subject" name="subject" required><br><br>
+        <!-- Subject -->
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
 
-      <!-- Message -->
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
-      <!-- Dropdown -->
-      <label for="reason">Reason for Contact:</label><br>
-      <select id="reason" name="reason" required>
-        <option value="">--Select--</option>
-        <option value="project">Project Collaboration</option>
-        <option value="help">Help/Support</option>
-        <option value="other">Other</option>
-      </select><br><br>
+        <!-- Dropdown -->
+        <div class="form-group">
+          <label for="reason">Reason for Contact:</label>
+          <select id="reason" name="reason" required>
+            <option value="">--Select--</option>
+            <option value="project">Project Collaboration</option>
+            <option value="help">Help/Support</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-      <!-- Radio Buttons -->
-      <p>Preferred Contact Method:</p>
-      <input type="radio" id="email_contact" name="contact_method" value="email" required>
-      <label for="email_contact">Email</label>
-      <input type="radio" id="phone_contact" name="contact_method" value="phone">
-      <label for="phone_contact">Phone</label><br><br>
+        <!-- Radio Buttons -->
+        <div class="form-group">
+          <p>Preferred Contact Method:</p>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="contact_method" value="email" required>
+              Email
+            </label>
+            <label>
+              <input type="radio" name="contact_method" value="phone">
+              Phone
+            </label>
+          </div>
+        </div>
 
-      <!-- Checkbox -->
-      <input type="checkbox" id="newsletter" name="newsletter">
-      <label for="newsletter">Subscribe to my newsletter</label><br><br>
+        <!-- Checkbox -->
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Subscribe to my newsletter
+          </label>
+        </div>
 
-      <!-- Submit -->
-      <button type="submit">Send Message</button>
-    </form>
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
   </main>
-
-  <footer>
+ 
+  <footer class="site-footer">
     <p>&copy; 2025 Immaculate Kimani</p>
   </footer>
 </body>

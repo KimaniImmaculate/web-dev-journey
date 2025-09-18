@@ -1,0 +1,63 @@
+/* Element selector*/
+body {
+    font-family: 'Comfortaa', cursive; 
+    background-color: #fef9f4; 
+    line-height: 1.6;
+    margin: 2rem; 
+    padding: 1rem; 
+    color: #333; 
+}
+
+/* Element selector: Headings */
+h1 {
+    color: #4a2f0f;
+    text-align: center;
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #6b4e2a;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+/* Element selector: Paragraphs */
+p {
+    color: #5a4d41;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Class selector: Movie list items */
+ul li {
+    list-style-type: square; 
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+ul li:hover {
+    color: #d2691e;
+    transform: scale(1.1);
+}
+
+/* ID selector: LinkedIn link */
+a#linkedin {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #0a66c2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a#linkedin:hover {
+    background-color: #004182;
+    transform: scale(1.05);
+}

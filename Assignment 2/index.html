@@ -4,35 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Web Dev Journey</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Immaculate Kimani</h1>
-    <p>Passionate Computer Science Student | Tech Enthusiast | Aspiring Developer</p>
+    <p>Computer Science Student | Aspiring Developer</p>
   </header>
 
   <main>
     <!-- Bio Section -->
-    <section>
+    <section class="bio-section">
       <h2>About Me</h2>
-      <img src="Media/ME3.jpg" alt="Profile photo of Immaculate" width="200">
-      <p>Hello! I’m Immaculate, a Computer Science student exploring the magic of code and building solutions that make an impact. I love coding, reading, and learning awesome things!</p>
+      <div class="bio-container">
+        <img src="Media/ME3.jpg" alt="Profile photo of Immaculate" class="profile-img">
+        <p>Hello! I’m Immaculate, a Computer Science student exploring the magic of code and building solutions that make an impact. I love coding, reading, and learning awesome things!</p>
+      </div>
     </section>
 
     <!-- Skills Section -->
-    <section>
+    <section class="skills-section">
       <h2>My Skills</h2>
-      <ul>
+      <ul class="skills-list">
         <li>HTML, CSS, JavaScript</li>
         <li>Kenya Sign Language Interpretation</li>
         <li>Networking Basics (Cisco Certified)</li>
       </ul>
     </section>
 
-    <!-- Progress Table -->
-    <section>
+    <!-- Learning Progress Table -->
+    <section class="progress-section">
       <h2>Learning Progress</h2>
-      <table border="1" cellpadding="8">
+      <table class="progress-table">
         <thead>
           <tr>
             <th>Skill</th>
@@ -56,19 +59,23 @@
       </table>
     </section>
 
-    <!-- Additional Media -->
-    <section>
-  <h2>Check Out my Favorite Song</h2>
-  <audio controls>
-    <source src="Media/FavSong .mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</section>
+    <!-- Favorite Song Section -->
+    <section class="media-section">
+      <h2>Check Out my Favorite Song</h2>
+      <audio controls>
+        <source src="Media/FavSong .mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+   <section class="contact-button-section">
+       <a href="contact.html" class="contact-btn">📩 Contact Me</a>
+  </section>
   </main>
 
-  <footer>
-    <p>📩 <a href="contact.html">Contact Me</a></p>
+  <footer class="site-footer">
     <p>&copy; 2025 Immaculate Kimani</p>
   </footer>
 </body>
 </html>
+

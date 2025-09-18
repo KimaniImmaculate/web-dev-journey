@@ -1,0 +1,205 @@
+/* GENERAL BODY STYLING */
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #fdf6f0; 
+    color: rgb(51, 51, 51); 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* HEADER & FOOTER */
+.site-header {
+    background-color: hsl(30, 80%, 90%); 
+    color: #4a2f0f;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+.site-footer {
+    background-color: hsl(30, 80%, 90%); 
+    color: #4a2f0f;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 3rem;
+}
+
+.site-header h1, .site-footer p {
+    margin: 0.5rem 0;
+}
+
+/* SECTIONS AS CARDS */
+section {
+    background-color: #fff; 
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 800px;
+}
+
+/* BIO SECTION */
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.bio-container img.profile-img {
+    border-radius: 50%;
+    border: 3px solid #d2a679; 
+    width: 200px;
+    height: auto;
+}
+
+.bio-container p {
+    flex: 3;
+    margin: 0;
+    margin-top: 50px;
+}
+
+/* SKILLS LIST */
+.skills-list {
+    list-style-type: square;
+    padding-left: 1.2rem;
+}
+
+.skills-list li {
+    margin-bottom: 0.7rem;
+    color: #5a4d41;
+}
+
+/* TABLE STYLING */
+.progress-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.progress-table th, .progress-table td {
+    border: 1px solid #a67c52;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.progress-table th {
+    background-color: #d2a679; 
+    color: #fff;
+}
+
+.progress-table tbody tr:nth-child(even) {
+    background-color: rgba(214, 179, 140, 0.2); 
+}
+
+/* CONTACT FORM */
+.contact-form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label, .form-group p {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 70%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #d2a679;
+    box-shadow: 0 0 5px rgba(210, 166, 121, 0.5);
+}
+
+/* RADIO BUTTONS & CHECKBOXES */
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    background-color: #d2a679; /* Hex */
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: rgb(150, 100, 50); /* RGB hover */
+    transform: scale(1.05);
+}
+
+/* MEDIA SECTION (Audio) */
+.media-section audio {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+    display: inline-block;
+    background-color: #d2a679; /* Hex color */
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: rgb(150, 100, 50); /* RGB hover */
+    transform: scale(1.05);
+}
+
+
+/* FOOTER LINKS  */
+.site-footer a {
+    color: #4a2f0f;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bio-container img {
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .progress-table, .contact-form {
+        width: 95%;
+    }
+}
+
