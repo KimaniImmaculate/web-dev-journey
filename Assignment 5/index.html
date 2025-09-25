@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme toggle button -->
+  <button class="theme-toggle" onclick="Calculator.toggleTheme()">Dark Mode</button>
+  <!-- History toggle button -->
+  <button class="history-toggle" onclick="Calculator.toggleHistory()">Show History</button>
+  <!-- Main calculator container -->
+  <div class="calculator">
+    <!-- Display area for input and results -->
+    <div class="display">
+      <input type="text" id="display" readonly>
+    </div>
+    <!-- Buttons for calculator operations -->
+    <div class="buttons">
+      <!-- Clear and delete buttons -->
+      <button class="btn clear" onclick="Calculator.clearDisplay()">C</button>
+      <button class="btn clear" onclick="Calculator.deleteLast()">⌫</button>
+      <!-- Scientific operators -->
+      <button class="btn operator" onclick="Calculator.appendToDisplay('sqrt')">√</button>
+      <button class="btn operator" onclick="Calculator.appendToDisplay('^')">^</button>
+      <!-- Number buttons -->
+      <button class="btn number" onclick="Calculator.appendToDisplay('7')">7</button>
+      <button class="btn number" onclick="Calculator.appendToDisplay('8')">8</button>
+      <button class="btn number" onclick="Calculator.appendToDisplay('9')">9</button>
+      <!-- Division operator -->
+      <button class="btn operator" onclick="Calculator.appendToDisplay('/')">÷</button>
+      <!-- Number buttons -->
+      <button class="btn number" onclick="Calculator.appendToDisplay('4')">4</button>
+      <button class="btn number" onclick="Calculator.appendToDisplay('5')">5</button>
+      <button class="btn number" onclick="Calculator.appendToDisplay('6')">6</button>
+      <!-- Subtraction operator -->
+      <button class="btn operator" onclick="Calculator.appendToDisplay('-')">-</button>
+      <!-- Number buttons -->
+      <button class="btn number" onclick="Calculator.appendToDisplay('1')">1</button>
+      <button class="btn number" onclick="Calculator.appendToDisplay('2')">2</button>
+      <button class="btn number" onclick="Calculator.appendToDisplay('3')">3</button>
+      <!-- Addition operator -->
+      <button class="btn operator" onclick="Calculator.appendToDisplay('+')">+</button>
+      <!-- Trigonometric functions -->
+      <button class="btn operator" onclick="Calculator.appendToDisplay('sin')">sin</button>
+      <button class="btn operator" onclick="Calculator.appendToDisplay('cos')">cos</button>
+      <!-- Zero, decimal, and equals buttons -->
+      <button class="btn number zero" onclick="Calculator.appendToDisplay('0')">0</button>
+      <button class="btn number" onclick="Calculator.appendToDisplay('.')">.</button>
+      <button class="btn equals" onclick="Calculator.calculate()">=</button>
+    </div>
+    <!-- History panel -->
+    <div class="history-panel" id="history-panel">
+      <h3>History</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
