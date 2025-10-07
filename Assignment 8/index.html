@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Weather App</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Enhanced Weather App</h1>
+
+    <!-- Controls for unit toggle -->
+    <div class="controls">
+      <button id="toggle-unit">°C / °F</button>
+    </div>
+
+    <!-- Search box for city input -->
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Search history (last 5 cities) -->
+    <div class="search-history">
+      <h3>Search History:</h3>
+      <ul id="history-list"></ul>
+    </div>
+
+    <!-- Loading indicator -->
+    <div id="loading" class="hidden">Loading...</div>
+
+    <!-- Error message display -->
+    <div id="error" class="hidden error-message"></div>
+
+    <!-- Current weather display -->
+    <div id="weather-display" class="hidden">
+      <h2 id="city-name"></h2>
+      <div class="weather-info">
+        <!-- Weather icon -->
+        <img id="weather-icon" src="" alt="Weather icon">
+        <div class="temperature">
+          <span id="temp"></span>°
+        </div>
+        <p id="description"></p>
+      </div>
+
+      <!-- Additional weather details -->
+      <div class="details">
+        <div>Feels like: <span id="feels-like"></span>°</div>
+        <div>Humidity: <span id="humidity"></span>%</div>
+        <div>Wind: <span id="wind"></span> m/s</div>
+      </div>
+    </div>
+
+    <!-- 5-day forecast display -->
+    <div id="forecast" class="hidden">
+      <h3>5-Day Forecast</h3>
+      <div class="forecast-cards" id="forecast-cards"></div>
+    </div>
+
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script2.js"></script>
+</body>
+</html>
