@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Team Task Tracker</h1>
+  </header>
+
+  <main>
+    <!-- ========== TEAM SECTION ========== -->
+    <aside id="team-section">
+      <h2>Team Members</h2>
+
+      <!-- Add Team Member Form -->
+      <form id="add-member-form">
+        <input type="text" id="member-name" placeholder="Full Name" required />
+        <input type="email" id="member-email" placeholder="Email" required />
+        <input type="text" id="member-role" placeholder="Role (e.g., Developer)" required />
+        <button type="submit">Add Member</button>
+      </form>
+
+      <!-- Member List -->
+      <div id="team-list"></div>
+    </aside>
+
+    <!-- ========== TASK SECTION ========== -->
+    <section id="task-section">
+      <h2>Tasks</h2>
+
+      <!-- Add Task Form -->
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter task description" required />
+        <select id="assignee-select" required></select>
+        <button type="submit">Add Task</button>
+      </form>
+
+      <!-- Filter Controls -->
+      <div id="filters">
+        <select id="filter-member">
+          <option value="all">All Members</option>
+        </select>
+        <button id="show-all">All</button>
+        <button id="show-completed">Completed</button>
+        <button id="show-pending">Pending</button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="task-list"></ul>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button id="export-json">Export JSON</button>
+        <button id="clear-data">Clear All Data</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Team Task Tracker by Immaculate 👩‍💻</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
