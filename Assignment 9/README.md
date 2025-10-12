@@ -2,6 +2,19 @@
 
 A small Express-based notes API used for learning Node.js and building simple REST endpoints. Notes are stored in-memory (an array) so data will reset when the server restarts. The server provides basic CRUD operations for notes.
 
+## Project structure
+
+```
+Assignment 9/
+├─ server.js         # Express server and API routes (notes CRUD)
+├─ package.json      # project manifest (dependencies: express)
+├─ package-lock.json # generated lockfile
+├─ node_modules/     # installed packages
+├─ .gitignore        # files to ignore in Git
+├─ README.md         # this file
+└─ Screenshots/      # screenshots of API requests/responses
+```
+
 ### Run the server
 
 Make sure Node.js is installed. From the `Assignment 9` folder run:
@@ -34,6 +47,14 @@ Base URL: http://localhost:3000
 
 - GET /notes/:id
 	- Returns a single note by ID. Returns 404 if not found.
+	- Status codes:
+	  - 200: OK (note found)
+	  - 404: Not Found (no note with the specified id)
+	- Example error response (404):
+
+```json
+{ "error": "Note not found." }
+```
 
 - POST /notes
 	- Create a new note. Request body (JSON):
@@ -45,15 +66,50 @@ Base URL: http://localhost:3000
 }
 ```
 
-	- Returns 201 with the created note.
+	- Status codes:
+	  - 201: Created (note successfully created)
+	  - 400: Bad Request (missing title or content)
+	- Example error response (400):
+
+```json
+{ "error": "Title and content are required." }
+```
+
+	- Example success response (201):
+
+```json
+{ "id": 4, "title": "New note", "content": "Note content here" }
+```
 
 - PUT /notes/:id
 	- Update an existing note. Request body same shape as POST. Returns 404 if note not found.
+	- Status codes:
+	  - 200: OK (note updated)
+	  - 400: Bad Request (missing title or content)
+	  - 404: Not Found (no note with the specified id)
+	- Example error response (400):
+
+```json
+{ "error": "Title and content are required." }
+```
+
+Example error response (404):
+
+```json
+{ "error": "Note not found." }
+```
 
 - DELETE /notes/:id
 	- Deletes the note. Returns 204 on success.
+	- Status codes:
+	  - 204: No Content (deleted successfully)
+	  - 404: Not Found (no note with the specified id)
+	- Example error response (404):
 
-### Quick curl examples
+```json
+{ "error": "Note not found." }
+```
+
 
 ### Testing with Insomnia 
 
@@ -107,3 +163,16 @@ Examples:
 ---
 
 Notes are stored temporarily in the server process. For persistence, replace the in-memory storage with a database.
+
+## Project structure
+
+```
+Assignment 9/
+├─ server.js         # Express server and API routes (notes CRUD)
+├─ package.json      # project manifest (dependencies: express)
+├─ package-lock.json # generated lockfile
+├─ node_modules/     # installed packages
+├─ .gitignore        # files to ignore in Git
+├─ README.md         # this file
+└─ Screenshots/      # screenshots of API requests/responses
+```
