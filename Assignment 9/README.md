@@ -55,7 +55,7 @@ Base URL: http://localhost:3000
 
 ### Quick curl examples
 
-### Testing with Insomnia or Postman
+### Testing with Insomnia 
 
 You can test the API easily using Insomnia or Postman. The steps are the same in both clients:
 
