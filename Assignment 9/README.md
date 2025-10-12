@@ -164,15 +164,3 @@ Examples:
 
 Notes are stored temporarily in the server process. For persistence, replace the in-memory storage with a database.
 
-## Project structure
-
-```
-Assignment 9/
-├─ server.js         # Express server and API routes (notes CRUD)
-├─ package.json      # project manifest (dependencies: express)
-├─ package-lock.json # generated lockfile
-├─ node_modules/     # installed packages
-├─ .gitignore        # files to ignore in Git
-├─ README.md         # this file
-└─ Screenshots/      # screenshots of API requests/responses
-```
