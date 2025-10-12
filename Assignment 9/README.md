@@ -53,8 +53,6 @@ Base URL: http://localhost:3000
 - DELETE /notes/:id
 	- Deletes the note. Returns 204 on success.
 
-### Quick curl examples
-
 ### Testing with Insomnia or Postman
 
 You can test the API easily using Insomnia or Postman. The steps are the same in both clients:
